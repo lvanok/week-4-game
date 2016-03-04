@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+
 <html>
 <header>
 <h1>Crystals Collector!</h1>
 </header>
 <head>
-    <title>Lisa's Crystal Collector Game</title>
- <style type="text/css">#crystalImage {
-       width: 300px;
-       height: 300px;
-       }
- </style>
+  
+  <title>Lisa's Crystal Collector Game</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>    
+  <script type="text/javascript" src="game.js"></script>
+  <link href="assets/css/reset.css">
+  <link href="assets/css/style.css">
+
 </head>
 <body>
-    <div class="main-container">
+    <div class="nav">
      <div class="container">
        <ul>
          <li>You will be given a random number at the start of the game.</li>
@@ -23,23 +24,8 @@
        </ul>
      </div>
 </div>
-<img src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals" id="crystalImage">
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script>
+<!-- <img src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals" id="crystalImage"> -->
 
-var randomNum = Math.floor(Math.random() * 120 - 19 + 1) + 19 ;
-console.log("Random Number = "+randomNum);
-var userScore = 0;
-var crystalRunningTot = 0;
-var blueValue = Math.floor((Math.random() * 12) + 1);
-console.log("Blue Value = "+blueValue);
-var redValue = Math.floor((Math.random() * 12) + 1);
-console.log("Red Value = "+redValue);
-var greenValue = Math.floor((Math.random() * 12) + 1);
-console.log("Green Value = "+greenValue);
-var yellowValue = Math.floor((Math.random() * 12) + 1);
-console.log("Yellow Value = "+yellowValue);
-</script>
 <div>
        <div><img src="assets/images/blue.png" id="blue" data-name="blue" class="buttons">
        </div>
@@ -48,68 +34,25 @@ console.log("Yellow Value = "+yellowValue);
        <div><img src="assets/images/green.png" id="green" data-name="green" class="buttons">
        </div>
        <div><img src="assets/images/yellow.png" id="yellow" data-name="yellow" class="buttons">
-       /div>
+      
 </div>
 
-<script type="text/javascript"></script>
-<script>
+<!-- // use if using ..external .js file and link it through a <script> inside the <head>. If you're going to access your javascript from an external file, don't forget the jQuery $(document).ready(), which basically says do everything in my javascript, once the page is loaded. Let me or Kenny know if you have any questions on it. -->
+ <h3>Random Number</h3>
 
-$(".buttons").on("click", function() {
-var currentButton=$(this)[0];
-console.log(currentButton.id);
+<div id="crystal images">
+ </div>
+ <div class="total score">
+ <h3 id="scoreBoard">"Your total score is:"</h3>
+  document.write("Wins:  " +
+winboard"<br>");
+ document.write("Losses:  " + lossboard"<br>");
+ <!-- <div>
+   <h3 style="display:inline-block">Wins:  </h3><h3 id="winBoard" style="display:inline-block"></h3>
+   <h3>Losses:  <h3><h3 id="lossBoard"></h3>
+ </div> -->
+<!--  console.log(userScore); -->
+ </div>
 
-if(currentButton.id == "blue"){
-  userScore = userScore + blueValue;
-  console.log("Blue clicked. User Score is now = "+userScore);
-}else if(currentButton.id == "red"){
-  userScore = userScore + redValue;
-  console.log("Red clicked. User Score is now = "+userScore);
-}else if(currentButton.id == "green"){
-  userScore = userScore + greenValue;
-  console.log("Green clicked. User Score is now = "+userScore);
-}else if(currentButton.id == "yellow"){
-  userScore = userScore + yellowValue;
-  console.log("Yellow clicked. User Score is now = "+userScore);
-}
-/// We don't need to generate a value for a crystal each time
-//var x = Math.floor((Math.random() * 12) + 1);
-// if statement is:
-// if(test==true){ } 
-if(userScore == randomNum){
-  alert("You Win!");
-  var wincounter = 0;
-  console.log("Wins:   " +1)
-}else if(userScore > randomNum){
-  alert("You Lose!");
-  var losscounter = 0;
-  console.log("Losses:   "+1);
-}
-
-
- // if (crystalChoice == blue) {
- // set (randomAmt(random.Math(1-12))
- // totalAmt = randomNum; alert "you win":  restart loop;
- // totalAmt > randomNum; alert "youloose"; restart loop;
-
-
-// $( document ).ready(function() {
-//   var numberToGuess = 50;
-//   var counter = 0;
-//   $('#number').text(numberToGuess):
-
-//   $('#crystalImage').on('click', function(){
-//     counter = counter = 10;
-//     alert(counter);
-//   if (counter == numberToGuess){
-//         alert('You won!!!! It was 50');
-//         }else if 
-//         ( counter > numberToGuess){
-//         alert('You lost!');
-//       }
-//   });
-// });
-
-});
-</script>
 </body>
 </html>
