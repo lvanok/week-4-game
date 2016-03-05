@@ -5,7 +5,7 @@
 </header>
 <head>
   
-  <title>Lisa's Crystal Collector Game</title>
+  <title>My Crystal Collector Game</title>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>    
   <script type="text/javascript" src="game.js"></script>
   <link href="assets/css/reset.css">
@@ -24,8 +24,8 @@
        </ul>
      </div>
 </div>
-<!-- <img src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals" id="crystalImage"> -->
-
+<!-- <img src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals" height=""100" weight="100" id="crystalImage">
+ -->
 <div>
        <div><img src="assets/images/blue.png" id="blue" alt="image" data-name="blue" class="buttons">
        </div>
@@ -33,26 +33,27 @@
        </div>
        <div><img src="assets/images/green.png" id="green" alt="image" data-name="green" class="buttons">
        </div>
-       <div><img src="assets/images/yellow.png" id="yellow" alt="image" data-name="yellow" class="buttons">
+       <div><img src="assets/images/yellow.png" id="yellow" alt="image" data-name="yellow" class="buttons"></div>
       
 </div>
 
-<!-- // use if using ..external .js file and link it through a <script> inside the <head>. If you're going to access your javascript from an external file, don't forget the jQuery $(document).ready(), which basically says do everything in my javascript, once the page is loaded. Let me or Kenny know if you have any questions on it. -->
- <h3>Random Number</h3>
-
 <div id="crystal images">
- </div>
- <div class="total score">
- <h3 id="scoreBoard">"Your total score is:"</h3>
-  document.write("Wins:  " +
-winboard"<br>");
- document.write("Losses:  " + lossboard"<br>");
- <!-- <div>
-   <h3 style="display:inline-block">Wins:  </h3><h3 id="winBoard" style="display:inline-block"></h3>
-   <h3>Losses:  <h3><h3 id="lossBoard"></h3>
- </div> -->
-<!--  console.log(userScore); -->
- </div>
-
+<h3>Random Number</h3>
+      <div class="total score">
+      <h3 id="scoreBoard">"Your total score is:"</h3>
+           <div>
+           <h3 style="display:inline-block">Wins:  </h3>
+           <h3 id="winBoard" style="display:inline-block"></h3>
+          <h3>Losses:  </h3>
+          <h3 id="lossBoard" style="display:inline-block"></h3>
+          </div>
+      </div>
+ </div>        
+<div>
+  <script> 
+    document.write("Wins:  " +winBoard);
+    document.write("Losses:  " +lossBoard);
+  </script>
+</div>
 </body>
 </html>

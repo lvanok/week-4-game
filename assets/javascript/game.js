@@ -1,5 +1,4 @@
-​
-$(document).ready(function() {
+​$(document).ready(function() {
 	var randomNum = Math.floor(Math.random() * 120 - 19 + 1) + 19 ;
 	console.log("Random Number = "+randomNum);
 	$('#target_number').text("Target Number: " + randomNum);
@@ -13,7 +12,7 @@ $(document).ready(function() {
 	console.log("Green Value = "+greenValue);
 	var yellowValue = Math.floor((Math.random() * 12) + 1);
 	console.log("Yellow Value = "+yellowValue);
-// });
+// }});
 	var wins = 0;
 	var losses = 0;
 ​
