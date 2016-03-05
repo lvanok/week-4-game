@@ -1,5 +1,4 @@
-​
-$(document).ready(function() {
+​$(document).ready(function() {
 	var randomNum = Math.floor(Math.random() * 120 - 19 + 1) + 19 ;
 	console.log("Random Number = "+randomNum);
 	$('#target_number').text("Target Number: " + randomNum);
