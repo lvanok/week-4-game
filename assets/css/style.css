@@ -32,16 +32,14 @@ img {
     z-index: -1;
     }
 
-body }
+body {
     background: url("..images/concrete_seamless.png");
     font-size: 18px;
     line-height: 34px;
     font-family: 'Ariel', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777;
     }
-* {
-  box-sizing: border-box;
-}
+
 
 h1   { 
     font-family: 'Georgia', Times, Times New Roman, serif;
