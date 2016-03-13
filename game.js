@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Inception</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
-<style> 
+<style>
 $(document).ready(function() {
 	var randomNum = Math.floor(Math.random() * 120 - 19 + 1) + 19 ;
 	console.log("Random Number = "+randomNum);
@@ -81,4 +78,3 @@ $(document).ready(function() {
 	</style> 
 	</head>
 	</html>
- 
