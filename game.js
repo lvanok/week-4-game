@@ -1,8 +1,5 @@
-<!DOCTYPE html>
 <html>
-<head>
-
-<style>
+<script>
 $(document).ready(function() {
 	var randomNum = Math.floor(Math.random() * 120 - 19 + 1) + 19 ;
 	console.log("Random Number = "+randomNum);
@@ -37,7 +34,7 @@ $(document).ready(function() {
 	  }else if(currentButton.id == "yellow"){
 	    userScore = userScore + yellowValue;
 	    console.log("Yellow clicked. User Score is now = "+userScore);
-	  
+	  };
 
 	  $('#scoreBoard').text("Your total score is: " +userScore);
 
@@ -73,8 +70,9 @@ $(document).ready(function() {
 	    console.log("Yellow Value = "+yellowValue);
 	    randomNum = Math.floor(Math.random() * 120 - 19 + 1) + 19 ;
 	    console.log (randomNum);
-	   });
+	   };
+	for 'win' > 1 reset randomNum;
+	for 'lose' > 1 reset randomNum;
 
-	</style> 
-	</head>
-	</html>
+</script>
+</html>
